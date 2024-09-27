@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(143, 170, 200);
+        }
+
+        .logo {
+            width: 500px;
+            height: 100px;
+        }
+
+        .logo img {
+
+            max-width: 100%;
+            max-height: 100%;
+
+
+        }
+
+        hr {
+            background-color: black;
+        }
+
+        form {
+            border: 2px;
+            width: 800px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 25px;
+            background-color: rgb(67, 114, 194);
+            border-radius: 25px;
+
+
+        }
+
+        .reg {
+            color: white;
+            display: flex;
+            border: 1px;
+            width: 580px;
+            margin: auto;
+            margin-top: -35px;
+            font-size: 22px;
+        }
+
+        .check {
+            display: flex;
+            font-size: 20px;
+            border: 1px;
+            width: 550px;
+            margin: auto;
+            color: white;
+        }
+
+        .u {
+            margin-left: 30px;
+        }
+
+        .option {
+            border: 1px;
+            width: 250px;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-left: 127px;
+            color: white;
+
+
+
+        }
+
+        .select {
+            font-size: 17px;
+            border-radius: 15px;
+        }
+
+        .enter {
+            border: 1px;
+            width: 450px;
+            margin-left: 127px;
+            margin-top: 8px;
+            color: white;
+        }
+
+        .otp {
+            border: 1px;
+            width: 250px;
+            margin-left: 127px;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+
+        .note {
+            color: white;
+            border: 1px;
+            width: 200px;
+            display: flex;
+            margin-left: 600px;
+            margin-top: -80px;
+
+        }
+        .capture{
+            border: 1px;
+            width: 220px;
+            margin-left: 127px;
+            display: flex;
+            margin-top: -40px;
+        }
+
+        .cap {
+            width: 80px;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+        .btn{
+        
+            width: 100px;
+            margin: auto;
+            margin-top: 10px;
+            
+        }
+        .btn button{
+            font-size: 25px;
+            border-radius: 10px;
+            border: 1px white;
+            cursor: pointer;
+
+        }
+        .btn button:hover{
+            color: rgb(4, 63, 153);
+            font-size: 25.1px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./ogo.png" alt="">
+    </div>
+    <hr>
+    <hr>
+    <form action="">
+        <div class="reg">
+
+            <b>
+                <h2> <u>Register With Your Correct Information</h2></u>
+            </b>
+        </div>
+        <div class="check">
+            <div>
+                <input type="radio" name="a">
+                <label for="">Rural Registration</label>
+            </div>
+            <div class="u">
+                <input type="radio" name="a">
+                <label for="">Urban Registration</label>
+            </div>
+        </div>
+        <div class="option">
+            <label for="">State:</label>
+            <select id="state" name="state" class="select">
+                <option value="default">--Select State-- </option>
+                <option value="Uttar Pradesh">Uttar Pradesh </option>
+                <option value="Maharashtra">Maharashtra </option>
+                <option value="West Bengal"> West Bengal</option>
+                <option value="Madhya Pradesh"> Madhya Pradesh</option>
+                <option value="Bihar"> Bihar</option>
+                <option value="Odisha"> Odisha</option>
+            </select>
+        </div>
+        <div class="enter">
+            <div>
+                <label for="">Enter Aadhaar No:-</label>
+                <label for="" style="margin-left: 100px;">Mobile Number:-</label>
+            </div>
+            <div>
+                <input type="number">
+                <input type="checkbox">
+                <input type="number" style="margin-left: 33px;">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="otp">
+            <button>Get OTP</button>
+            <input type="text" placeholder="enter otp" style="width: 70px;
+            font-size: 15px;
+            border-radius: 5px; margin-left: 10px;">
+
+        </div>
+
+        <div class="note">
+            <p>(“Your Aadhar will be authenticated with UIDAI.
+                You Will be able to proceed for registration only if
+                your Aadhaar is authenticated.”)
+            </p>
+        </div>
+
+        <div class="capture">
+            <input type="text" class="cap" placeholder="2A6dR9">
+            <input type="text" class="cap" placeholder="capture" style="margin-left: 10px;">
+
+        </div>
+        <div class="btn">
+            <button>Submit</button>
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
